@@ -1,0 +1,82 @@
+[
+  {
+    "subject": "Verify Your Password Now",
+    "from_address": "Security Team <security@company.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "AI risk score >= 70; AI flagged as phishing",
+    "spf_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    }
+  },
+  {
+    "subject": "Urgent Wire Transfer Request",
+    "from_address": "CEO Executive <ceo@evil.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; Display-name spoofing; AI flagged as phishing",
+    "spf_pass": false,
+    "spoofed": true,
+    "ai_risk_score": 60,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 60,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Financial Fraud"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": true,
+      "details": "SPF record not found; DMARC record not found; Display name appears to impersonate an internal identity"
+    }
+  },
+  {
+    "subject": "Weekly Team Sync",
+    "from_address": "Jane Doe <jane@company.example>",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "spf_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    }
+  }
+]

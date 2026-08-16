@@ -1,0 +1,11 @@
+From: Security Team <security@company.example>
+To: employee@company.example
+Subject: Verify Your Password Now
+Date: Fri, 24 Jul 2026 10:10:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hello,
+Your account is at risk and requires immediate password verification.
+Click here to restore access and avoid suspension.
+https://phish.example/login

@@ -1,0 +1,27 @@
+{
+  "total": 4,
+  "passed": 0,
+  "blocked": 4,
+  "results": [
+    {
+      "name": "legitimate",
+      "decision": "BLOCK",
+      "reason": "SPF failed | DKIM failed | DMARC failed"
+    },
+    {
+      "name": "executive_spoofing",
+      "decision": "BLOCK",
+      "reason": "SPF failed | DKIM failed | DMARC failed | Identity spoofing | AI flagged as phishing"
+    },
+    {
+      "name": "ai_phishing",
+      "decision": "BLOCK",
+      "reason": "SPF failed | DKIM failed | DMARC failed | AI flagged as phishing"
+    },
+    {
+      "name": "malicious_links",
+      "decision": "BLOCK",
+      "reason": "SPF failed | DKIM failed | DMARC failed | AI flagged as phishing"
+    }
+  ]
+}

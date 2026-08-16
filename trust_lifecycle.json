@@ -1,0 +1,302 @@
+[
+  {
+    "message_id": "email-5471969006841833547",
+    "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-5452333422280496312",
+    "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-5452333422280496312",
+    "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-5452333422280496312",
+    "fingerprint": "Urgent password reset|ceo@external-example.com|Verify your password now: https://evil.example/login",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-5471969006841833547",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team, the meeting is at 3 PM.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "engine-lifecycle",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-8387911508531380460",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-5285018557307842071",
+    "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-6210995598419521870",
+    "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-6210995598419521870",
+    "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-6210995598419521870",
+    "fingerprint": "Urgent password reset|ceo@external-example.com|Verify your password now: https://evil.example/login",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-5285018557307842071",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team, the meeting is at 3 PM.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "engine-lifecycle",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-2495137009140521013",
+    "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-64684178848814577",
+    "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-64684178848814577",
+    "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-64684178848814577",
+    "fingerprint": "Urgent password reset|ceo@external-example.com|Verify your password now: https://evil.example/login",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-2495137009140521013",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team, the meeting is at 3 PM.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "engine-lifecycle",
+    "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+    "event": "initial_scan",
+    "trust_state": "trusted",
+    "transition_reason": null,
+    "report": {
+      "decision": "PASS",
+      "risk_score": 10,
+      "reason": "No suspicious indicators detected"
+    }
+  },
+  {
+    "message_id": "email-5859200025058554502",
+    "fingerprint": "Verify Your Password Now|Security Team <security@company.example>|Hello,\r\nYour account is at risk and requires immediate password verification.\r\nClick here to restore access and avoid suspension.\r\nhttps://phish.example/login",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-5373586418627077098",
+    "fingerprint": "Urgent Wire Transfer Request|CEO Executive <ceo@evil.example>|This is urgent.\r\nPlease approve the wire transfer before noon.\r\nDo not mention this to anyone else.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; DMARC failed; Display-name spoofing; AI flagged as phishing"
+    }
+  },
+  {
+    "message_id": "email-448628333348313454",
+    "fingerprint": "Weekly Team Sync|Jane Doe <jane@company.example>|Hello team,\r\nPlease join our weekly meeting at 3 PM today.\r\nThe agenda includes project updates and risk review.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 50,
+      "reason": "SPF failed; DMARC failed"
+    }
+  },
+  {
+    "message_id": "email-5859200025058554502",
+    "fingerprint": "Verify Your Password Now|Security Team <security@company.example>|Hello,\r\nYour account is at risk and requires immediate password verification.\r\nClick here to restore access and avoid suspension.\r\nhttps://phish.example/login",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+    }
+  },
+  {
+    "message_id": "email-5373586418627077098",
+    "fingerprint": "Urgent Wire Transfer Request|CEO Executive <ceo@evil.example>|This is urgent.\r\nPlease approve the wire transfer before noon.\r\nDo not mention this to anyone else.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 100,
+      "reason": "SPF failed; DMARC failed; Display-name spoofing; AI flagged as phishing"
+    }
+  },
+  {
+    "message_id": "email-448628333348313454",
+    "fingerprint": "Weekly Team Sync|Jane Doe <jane@company.example>|Hello team,\r\nPlease join our weekly meeting at 3 PM today.\r\nThe agenda includes project updates and risk review.",
+    "event": "initial_scan",
+    "trust_state": "compromised",
+    "transition_reason": "content_change",
+    "report": {
+      "decision": "BLOCK",
+      "risk_score": 50,
+      "reason": "SPF failed; DMARC failed"
+    }
+  }
+]

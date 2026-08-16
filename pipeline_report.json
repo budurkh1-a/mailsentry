@@ -1,0 +1,29 @@
+[
+  {
+    "subject": "Urgent: Verify Your Password Now",
+    "from_address": "Alice Johnson <alice@evil.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI risk score >= 70; AI flagged as phishing",
+    "spf_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 70,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 70,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    }
+  }
+]

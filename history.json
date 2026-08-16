@@ -1,0 +1,2204 @@
+[
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:22:28.956273+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:22:29.075685+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:23:23.881947+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:23:23.931325+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:25:03.338404+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:25:03.467472+00:00"
+  },
+  {
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:25:03.527093+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:25:05.686058+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:25:24.866844+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:25:24.912808+00:00"
+  },
+  {
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:25:24.972976+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:25:25.010093+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:27:04.016703+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:27:04.054536+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 90,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:27:04.097288+00:00"
+  },
+  {
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "timestamp": "2026-07-23T23:27:04.229415+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "timestamp": "2026-07-23T23:27:06.374940+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5471969006841833547",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:33:00.896521+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5452333422280496312",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:33:00.967258+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 90,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5452333422280496312",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:33:01.121406+00:00"
+  },
+  {
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5452333422280496312",
+      "fingerprint": "Urgent password reset|ceo@external-example.com|Verify your password now: https://evil.example/login",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:33:01.231967+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5471969006841833547",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team, the meeting is at 3 PM.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:33:03.390111+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "engine-lifecycle",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:33:03.441068+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-8387911508531380460",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:43:58.895671+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5285018557307842071",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:46:20.374255+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-6210995598419521870",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:46:20.617507+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 90,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-6210995598419521870",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:46:20.756528+00:00"
+  },
+  {
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-6210995598419521870",
+      "fingerprint": "Urgent password reset|ceo@external-example.com|Verify your password now: https://evil.example/login",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:46:20.918488+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5285018557307842071",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team, the meeting is at 3 PM.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:46:23.078792+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "engine-lifecycle",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:46:23.131907+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-2495137009140521013",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:48:37.375080+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-64684178848814577",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:48:37.444036+00:00"
+  },
+  {
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 90,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-64684178848814577",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:48:37.496981+00:00"
+  },
+  {
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-64684178848814577",
+      "fingerprint": "Urgent password reset|ceo@external-example.com|Verify your password now: https://evil.example/login",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-23T23:48:37.739642+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-2495137009140521013",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team, the meeting is at 3 PM.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:48:39.888421+00:00"
+  },
+  {
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "engine-lifecycle",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-07-23T23:48:39.938902+00:00"
+  },
+  {
+    "subject": "Verify Your Password Now",
+    "from_address": "Security Team <security@company.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5859200025058554502",
+      "fingerprint": "Verify Your Password Now|Security Team <security@company.example>|Hello,\r\nYour account is at risk and requires immediate password verification.\r\nClick here to restore access and avoid suspension.\r\nhttps://phish.example/login",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-30T23:10:13.717524+00:00"
+  },
+  {
+    "subject": "Urgent Wire Transfer Request",
+    "from_address": "CEO Executive <ceo@evil.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; Display-name spoofing; AI flagged as phishing",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "Display-name spoofing",
+      "AI flagged as phishing"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "display_name_spoof",
+        "severity": "high",
+        "detail": "Display name appears to impersonate an internal identity"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": true,
+    "ai_risk_score": 60,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 60,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Financial Fraud"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": true,
+      "details": "SPF record not found; DMARC record not found; Display name appears to impersonate an internal identity"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5373586418627077098",
+      "fingerprint": "Urgent Wire Transfer Request|CEO Executive <ceo@evil.example>|This is urgent.\r\nPlease approve the wire transfer before noon.\r\nDo not mention this to anyone else.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; Display-name spoofing; AI flagged as phishing"
+      }
+    },
+    "timestamp": "2026-07-30T23:10:14.453899+00:00"
+  },
+  {
+    "subject": "Weekly Team Sync",
+    "from_address": "Jane Doe <jane@company.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-448628333348313454",
+      "fingerprint": "Weekly Team Sync|Jane Doe <jane@company.example>|Hello team,\r\nPlease join our weekly meeting at 3 PM today.\r\nThe agenda includes project updates and risk review.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 50,
+        "reason": "SPF failed; DMARC failed"
+      }
+    },
+    "timestamp": "2026-07-30T23:10:17.217161+00:00"
+  },
+  {
+    "subject": "Verify Your Password Now",
+    "from_address": "Security Team <security@company.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5859200025058554502",
+      "fingerprint": "Verify Your Password Now|Security Team <security@company.example>|Hello,\r\nYour account is at risk and requires immediate password verification.\r\nClick here to restore access and avoid suspension.\r\nhttps://phish.example/login",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-07-30T23:10:35.996799+00:00"
+  },
+  {
+    "subject": "Urgent Wire Transfer Request",
+    "from_address": "CEO Executive <ceo@evil.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; Display-name spoofing; AI flagged as phishing",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "Display-name spoofing",
+      "AI flagged as phishing"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "display_name_spoof",
+        "severity": "high",
+        "detail": "Display name appears to impersonate an internal identity"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": true,
+    "ai_risk_score": 60,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 60,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Financial Fraud"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": true,
+      "details": "SPF record not found; DMARC record not found; Display name appears to impersonate an internal identity"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5373586418627077098",
+      "fingerprint": "Urgent Wire Transfer Request|CEO Executive <ceo@evil.example>|This is urgent.\r\nPlease approve the wire transfer before noon.\r\nDo not mention this to anyone else.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; Display-name spoofing; AI flagged as phishing"
+      }
+    },
+    "timestamp": "2026-07-30T23:10:37.577803+00:00"
+  },
+  {
+    "subject": "Weekly Team Sync",
+    "from_address": "Jane Doe <jane@company.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-448628333348313454",
+      "fingerprint": "Weekly Team Sync|Jane Doe <jane@company.example>|Hello team,\r\nPlease join our weekly meeting at 3 PM today.\r\nThe agenda includes project updates and risk review.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 50,
+        "reason": "SPF failed; DMARC failed"
+      }
+    },
+    "timestamp": "2026-07-30T23:10:37.966099+00:00"
+  }
+]
