@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 from mailsentry.engine import evaluate_email, scan_folder
+from mailsentry.fail_safe import unverified_result
 
 import streamlit as st
 
@@ -61,21 +62,22 @@ HISTORY_STORE = EvidenceStore("history.json")
 TRUST_MANAGER = TrustLifecycleManager("trust_lifecycle.json")
 
 
-@st.cache_data(show_spinner=False)
 def load_sample_files() -> List[Path]:
     if not SAMPLES_DIR.exists():
         return []
     return sorted(SAMPLES_DIR.glob("*.eml"))
 
 
-@st.cache_data(show_spinner=False)
 def run_evaluation(path: str) -> Dict[str, Any]:
-    return evaluate_email(
-        path,
-        internal_names=[person["name"] for person in PROTECTED_PERSONNEL],
-        internal_titles=[person["role"] for person in PROTECTED_PERSONNEL],
-        internal_domains=[PROTECTED_DOMAIN],
-    )
+    try:
+        return evaluate_email(
+            path,
+            internal_names=[person["name"] for person in PROTECTED_PERSONNEL],
+            internal_titles=[person["role"] for person in PROTECTED_PERSONNEL],
+            internal_domains=[PROTECTED_DOMAIN],
+        )
+    except Exception as exc:
+        return unverified_result("dashboard email analysis", exc)
 
 
 def render_dashboard() -> None:
@@ -199,7 +201,10 @@ def render_dashboard() -> None:
             elif report.get("decision") == "QUARANTINE":
                 st.warning(f"Message requires review: {report.get('reason')}")
             else:
-                st.success("No quarantine action required")
+                if report.get("verdict") == "UNVERIFIED":
+                    st.warning(f"Manual review required: {report.get('details', report.get('reason'))}")
+                else:
+                    st.success("No quarantine action required")
 
             st.markdown("### Analysis History")
             history = HISTORY_STORE.list()

@@ -11,10 +11,16 @@ import re
 from email.utils import getaddresses
 from typing import Any, Dict, List, Optional, Tuple
 
+from .fail_safe import system_error_details
+
 try:
     import dns.resolver  # type: ignore
 except ImportError:  # pragma: no cover - optional dependency
     dns = None  # type: ignore
+
+
+class DNSCheckError(Exception):
+    """Raised when sender authentication cannot be checked due to a system error."""
 
 
 def normalize_name(value: str) -> str:
@@ -45,14 +51,20 @@ def parse_from_header(from_header: str) -> Tuple[str, str]:
 
 def query_txt(domain: str) -> List[str]:
     """Query TXT records for a domain when dnspython is available."""
-    if not domain or dns is None:
+    if not domain:
+        return []
+    if dns is None:
+        # Optional DNS support is a configured capability, not a failed lookup.
+        # Keep the historical "record not found" behavior when it is unavailable.
         return []
 
     try:
         answers = dns.resolver.resolve(domain, "TXT")
         return [answer.to_text() for answer in answers]
-    except Exception:
+    except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer):
         return []
+    except Exception as exc:
+        raise DNSCheckError(f"TXT lookup failed for {domain}: {exc}") from exc
 
 
 def check_spf(domain: str) -> bool:
@@ -115,19 +127,28 @@ def evaluate_sender_authentication(
     internal_domains: Optional[List[str]] = None,
 ) -> Dict[str, Any]:
     """Return SPF, DMARC, and display-name spoofing results in the requested dictionary shape."""
-    display_name, from_address = parse_from_header(from_header)
-    sender_domain = extract_domain(from_address)
-    internal_domains = internal_domains or []
+    try:
+        display_name, from_address = parse_from_header(from_header)
+        sender_domain = extract_domain(from_address)
+        internal_domains = internal_domains or []
 
-    is_internal_domain = sender_domain in internal_domains
-    spf_pass = check_spf(sender_domain) or is_internal_domain
-    dmarc_pass = check_dmarc(sender_domain) or is_internal_domain
-    is_display_name_spoofed = check_display_name_spoofing(
-        from_header,
-        internal_names=internal_names,
-        internal_titles=internal_titles,
-        internal_domains=internal_domains,
-    )
+        is_internal_domain = sender_domain in internal_domains
+        spf_pass = check_spf(sender_domain) or is_internal_domain
+        dmarc_pass = check_dmarc(sender_domain) or is_internal_domain
+        is_display_name_spoofed = check_display_name_spoofing(
+            from_header,
+            internal_names=internal_names,
+            internal_titles=internal_titles,
+            internal_domains=internal_domains,
+        )
+    except Exception as exc:
+        return {
+            "spf_pass": None,
+            "dmarc_pass": None,
+            "is_display_name_spoofed": None,
+            "details": system_error_details("DNS/header authentication", exc),
+            "error": True,
+        }
 
     details: List[str] = []
     if is_internal_domain:

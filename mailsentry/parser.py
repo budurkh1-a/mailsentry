@@ -27,6 +27,7 @@ class ParsedEmail:
     headers: Dict[str, str] = field(default_factory=dict)
     body_text: str = ""
     html_text: str = ""
+    html_body: str = ""
     links: List[str] = field(default_factory=list)
     attachments: List[Dict[str, Any]] = field(default_factory=list)
 
@@ -36,6 +37,7 @@ class ParsedEmail:
             "headers": self.headers,
             "body_text": self.body_text,
             "html_text": self.html_text,
+            "html_body": self.html_body,
             "links": self.links,
             "attachments": self.attachments,
         }
@@ -69,6 +71,7 @@ def parse_email(source: Any) -> ParsedEmail:
     headers = {key: value for key, value in message.items()}
     plain_parts: List[str] = []
     html_parts: List[str] = []
+    raw_html_parts: List[str] = []
     attachments: List[Dict[str, Any]] = []
 
     for part in message.walk():
@@ -99,10 +102,12 @@ def parse_email(source: Any) -> ParsedEmail:
         if content_type == "text/plain":
             plain_parts.append(text)
         elif content_type == "text/html":
+            raw_html_parts.append(text)
             html_parts.append(re.sub(r"<[^>]+>", " ", text))
 
     plain_text = "\n".join(plain_parts).strip()
     html_text = "\n".join(html_parts).strip()
+    html_body = "\n".join(raw_html_parts).strip()
     if not plain_text and html_text:
         plain_text = html_text
 
@@ -113,6 +118,7 @@ def parse_email(source: Any) -> ParsedEmail:
         headers=headers,
         body_text=body_text,
         html_text=html_text,
+        html_body=html_body,
         links=links,
         attachments=attachments,
     )

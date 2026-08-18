@@ -11,10 +11,13 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from .ai_analyzer import analyze_email_details
+from .css_security import check_css_exfiltration
 from .dns_checker import evaluate_sender_authentication
+from .fail_safe import unverified_result
 from .parser import parse_email
 from .storage import EvidenceStore
 from .trust_lifecycle import TrustLifecycleManager
+from .typosquatting import detect_typosquatting
 
 
 _HISTORY_STORE = EvidenceStore("history.json")
@@ -31,33 +34,60 @@ def evaluate_email(
     message_id: Optional[str] = None,
 ) -> Dict[str, Any]:
     """Evaluate a single email and return a final JSON summary log."""
-    parsed = parse_email(source)
+    try:
+        parsed = parse_email(source)
+    except Exception as exc:
+        result = unverified_result("header parsing", exc)
+        _HISTORY_STORE.append(result)
+        return result
+
     headers = parsed.headers
     from_header = headers.get("From", "")
+    subject = headers.get("Subject", "")
 
-    dns_result = evaluate_sender_authentication(
-        from_header,
-        internal_names=internal_names,
-        internal_titles=internal_titles,
-        internal_domains=internal_domains,
-    )
+    try:
+        dns_result = evaluate_sender_authentication(
+            from_header,
+            internal_names=internal_names,
+            internal_titles=internal_titles,
+            internal_domains=internal_domains,
+        )
+        if dns_result.get("error"):
+            raise RuntimeError(dns_result.get("details", "DNS/header authentication failed"))
 
-    ai_result = analyze_email_details(
-        parsed.body_text,
-        subject=headers.get("Subject", ""),
-        links=parsed.links,
-        sender_info={
-            "display_name": from_header,
-            "from_domain": from_header.split("@", 1)[-1].strip(">") if "@" in from_header else "",
-        },
-        llm_config=llm_config,
-    )
+        typosquatting_result = detect_typosquatting(from_header)
+        css_exfiltration_result = check_css_exfiltration(parsed.html_body)
+
+        ai_result = analyze_email_details(
+            parsed.body_text,
+            subject=subject,
+            links=parsed.links,
+            headers=headers,
+            authentication={
+                "spf_pass": dns_result.get("spf_pass"),
+                "dkim_pass": dns_result.get("dkim_pass"),
+                "dmarc_pass": dns_result.get("dmarc_pass"),
+            },
+            sender_info={
+                "display_name": from_header,
+                "from_domain": from_header.split("@", 1)[-1].strip(">") if "@" in from_header else "",
+            },
+            llm_config=llm_config,
+        )
+        if ai_result.get("error") or ai_result.get("verdict") == "UNVERIFIED":
+            raise RuntimeError(ai_result.get("reasoning", "AI analysis failed"))
+    except Exception as exc:
+        result = unverified_result("DNS or AI analysis", exc, subject=subject, from_address=from_header)
+        _HISTORY_STORE.append(result)
+        return result
 
     ai_risk_score = int(ai_result.get("risk_score", 0))
     is_phishing = bool(ai_result.get("is_phishing", False))
     spf_pass = bool(dns_result.get("spf_pass", False))
     dmarc_pass = bool(dns_result.get("dmarc_pass", False))
     spoofed = bool(dns_result.get("is_display_name_spoofed", False))
+    typosquatting = bool(typosquatting_result.get("is_suspicious", False))
+    css_exfiltration = bool(css_exfiltration_result.get("is_suspicious", False))
 
     risk_score = ai_risk_score
     indicators: List[str] = []
@@ -75,6 +105,22 @@ def evaluate_email(
         risk_score += 20
         indicators.append("Display-name spoofing")
         policy_hits.append({"rule": "display_name_spoof", "severity": "high", "detail": "Display name appears to impersonate an internal identity"})
+    if typosquatting:
+        risk_score += 30
+        indicators.append("SUSPICIOUS_TYPOSQUATTING")
+        policy_hits.append({
+            "rule": "domain_typosquatting",
+            "severity": "high",
+            "detail": f"Sender domain closely resembles {typosquatting_result['target_domain']} ({typosquatting_result['similarity']:.1%} similarity)",
+        })
+    if css_exfiltration:
+        risk_score = max(risk_score + 40, 85)
+        indicators.append("Potential CSS Exfiltration (Outlook Exploit)")
+        policy_hits.append({
+            "rule": "css_data_exfiltration",
+            "severity": "critical",
+            "detail": css_exfiltration_result["details"],
+        })
     if is_phishing:
         risk_score += 10
         indicators.append("AI flagged as phishing")
@@ -88,7 +134,7 @@ def evaluate_email(
 
     risk_score = max(0, min(100, risk_score))
 
-    if spoofed or not spf_pass or not dmarc_pass:
+    if css_exfiltration or spoofed or not spf_pass or not dmarc_pass:
         decision = "BLOCK"
     elif risk_score >= 80 or is_phishing:
         decision = "BLOCK"
@@ -98,6 +144,8 @@ def evaluate_email(
         decision = "PASS"
 
     action = "QUARANTINE" if decision != "PASS" else "PASS"
+    status = "DANGER" if css_exfiltration else "OK"
+    verdict = "SUSPICIOUS" if css_exfiltration else "VERIFIED"
     risk_level = "critical" if risk_score >= 85 else "high" if risk_score >= 70 else "medium" if risk_score >= 40 else "low"
     reason = "; ".join(indicators) if indicators else "No suspicious indicators detected"
     threat_narrative = (
@@ -115,6 +163,9 @@ def evaluate_email(
     })
 
     result = {
+        "verdict": verdict,
+        "status": status,
+        "score": risk_score,
         "subject": headers.get("Subject", ""),
         "from_address": from_header,
         "decision": decision,
@@ -129,6 +180,8 @@ def evaluate_email(
         "spf_pass": spf_pass,
         "dmarc_pass": dmarc_pass,
         "spoofed": spoofed,
+        "typosquatting": typosquatting_result,
+        "css_exfiltration": css_exfiltration_result,
         "ai_risk_score": ai_risk_score,
         "ai_is_phishing": is_phishing,
         "ai_details": ai_result,

@@ -21,6 +21,8 @@ from email.parser import BytesParser
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+from mailsentry.fail_safe import system_error_details, unverified_result
+
 try:
     import dns.resolver  # type: ignore
 except ImportError:  # pragma: no cover - optional dependency
@@ -137,8 +139,8 @@ def extract_sender_info(message: Any) -> Dict[str, Any]:
             from email.utils import getaddresses
 
             parsed_addresses = getaddresses([from_header])
-        except Exception:  # pragma: no cover - defensive fallback
-            parsed_addresses = []
+        except Exception as exc:  # pragma: no cover - defensive fallback
+            raise EmailSecurityError(f"From header parsing failed: {exc}") from exc
 
         if parsed_addresses:
             display_name, from_address = parsed_addresses[0]
@@ -225,12 +227,15 @@ def detect_identity_spoofing(
 def _query_txt_records(domain: str) -> List[str]:
     """Return TXT records for a domain when dnspython is available."""
     if dns is None:
+        # Optional DNS support is a configured capability, not a failed lookup.
         return []
 
     try:
         answers = dns.resolver.resolve(domain, "TXT")
-    except Exception:
+    except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer):
         return []
+    except Exception as exc:
+        raise EmailSecurityError(f"DNS TXT lookup failed for {domain}: {exc}") from exc
 
     return [answer.to_text() for answer in answers]
 
@@ -406,13 +411,14 @@ def analyze_with_llm(
     except Exception as exc:  # pragma: no cover - network dependent
         return {
             "intent": "Unknown",
-            "risk_score": 0,
-            "reasoning": f"LLM request failed; using heuristic fallback: {exc}",
-            "source": "fallback",
+            "risk_score": 50,
+            "reasoning": system_error_details("AI analysis", exc),
+            "source": "error",
+            "error": True,
         }
 
 
-def evaluate_email(
+def _evaluate_email(
     source: Any,
     *,
     internal_employee_names: Optional[List[str]] = None,
@@ -439,6 +445,8 @@ def evaluate_email(
 
     # AI analysis layer
     ai_result = analyze_with_llm(body_info.get("plain_text", ""), sender_info, llm_config=llm_config)
+    if ai_result.get("error"):
+        raise EmailSecurityError(ai_result["reasoning"])
 
     reasons: List[str] = []
     if not spf_result.get("passed", False):
@@ -453,6 +461,9 @@ def evaluate_email(
     decision = "BLOCK" if reasons else "PASS"
 
     return {
+        "verdict": "VERIFIED",
+        "status": "OK",
+        "score": ai_result.get("risk_score", 0),
         "decision": decision,
         "reason": reasons[0] if reasons else "No suspicious indicators detected",
         "reasons": reasons,
@@ -471,6 +482,36 @@ def evaluate_email(
     }
 
 
+def evaluate_email(
+    source: Any,
+    *,
+    internal_employee_names: Optional[List[str]] = None,
+    internal_domains: Optional[List[str]] = None,
+    llm_config: Optional[Dict[str, Any]] = None,
+    risk_threshold: int = 75,
+) -> Dict[str, Any]:
+    """Evaluate email, returning a neutral manual-review decision on any check error."""
+    try:
+        return _evaluate_email(
+            source,
+            internal_employee_names=internal_employee_names,
+            internal_domains=internal_domains,
+            llm_config=llm_config,
+            risk_threshold=risk_threshold,
+        )
+    except Exception as exc:
+        return unverified_result(
+            "email analysis",
+            exc,
+            extra={
+                "reasons": [system_error_details("email analysis", exc)],
+                "authentication": {},
+                "identity_spoofing": {},
+                "ai_analysis": {},
+            },
+        )
+
+
 def build_arg_parser() -> argparse.ArgumentParser:
     """Create the CLI parser."""
     parser = argparse.ArgumentParser(description="Evaluate a raw email for phishing and spoofing risk")
@@ -486,16 +527,12 @@ def main() -> int:
     parser = build_arg_parser()
     args = parser.parse_args()
 
-    try:
-        result = evaluate_email(
-            args.email_source,
-            internal_employee_names=args.employee_names or None,
-            internal_domains=args.internal_domains or None,
-            risk_threshold=args.risk_threshold,
-        )
-    except Exception as exc:  # pragma: no cover - CLI safety
-        print(json.dumps({"decision": "BLOCK", "reason": f"Processing failed: {exc}"}, indent=2))
-        return 1
+    result = evaluate_email(
+        args.email_source,
+        internal_employee_names=args.employee_names or None,
+        internal_domains=args.internal_domains or None,
+        risk_threshold=args.risk_threshold,
+    )
 
     print(json.dumps(result, indent=2, ensure_ascii=False))
     return 0

@@ -2200,5 +2200,2157 @@
       }
     },
     "timestamp": "2026-07-30T23:10:37.966099+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "Urgent password reset",
+    "from_address": "ceo@external-example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:03.886571+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:03.908137+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:03.936823+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:03.965153+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:04.007112+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:04.034430+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "DNS lookup timed out"
+    },
+    "timestamp": "2026-08-18T13:18:04.061546+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "subject": "",
+    "from_address": "",
+    "analysis_error": {
+      "check": "header parsing",
+      "message": "parser timed out"
+    },
+    "timestamp": "2026-08-18T13:18:04.086441+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available",
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS/header authentication. Error: dnspython is not available"
+    },
+    "timestamp": "2026-08-18T13:18:04.169574+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-3985602712901782397",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:24.661706+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-4303214066524220959",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:24.700254+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 90,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-4303214066524220959",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:24.739928+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "AI endpoint timed out"
+    },
+    "timestamp": "2026-08-18T13:18:24.771766+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "DNS lookup timed out"
+    },
+    "timestamp": "2026-08-18T13:18:24.804639+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "subject": "",
+    "from_address": "",
+    "analysis_error": {
+      "check": "header parsing",
+      "message": "parser timed out"
+    },
+    "timestamp": "2026-08-18T13:18:24.843914+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "engine-lifecycle",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:24.881927+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-8729223361854939304",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:47.267623+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-7991370698318583347",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:47.297990+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 90,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-7991370698318583347",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:47.328219+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "AI endpoint timed out"
+    },
+    "timestamp": "2026-08-18T13:18:47.366959+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "DNS lookup timed out"
+    },
+    "timestamp": "2026-08-18T13:18:47.399798+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "subject": "",
+    "from_address": "",
+    "analysis_error": {
+      "check": "header parsing",
+      "message": "parser timed out"
+    },
+    "timestamp": "2026-08-18T13:18:47.432273+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "Team sync",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "risk_score": 10,
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "reasoning": "No strong phishing indicators were detected.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "engine-lifecycle",
+      "fingerprint": "Team sync|ahmed@securecorp.example|Hello team.",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:18:47.473051+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "Verify Your Password Now",
+    "from_address": "Security Team <security@company.example>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "risk_score": 100,
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "reasoning": "The message contains multiple common phishing cues such as urgency and credential requests.",
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5563901920688434408",
+      "fingerprint": "Verify Your Password Now|Security Team <security@company.example>|Hello,\r\nYour account is at risk and requires immediate password verification.\r\nClick here to restore access and avoid suspension.\r\nhttps://phish.example/login",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:26:22.262343+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "verdict": "CLEAN",
+      "risk_score": 10,
+      "reasoning": "No strong phishing indicators were detected.",
+      "indicators": [],
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-951276103718502982",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:34:26.504806+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "verdict": "PHISHING",
+      "risk_score": 100,
+      "reasoning": "The message contains multiple phishing cues.",
+      "indicators": [
+        "Urgency",
+        "Credential Harvesting",
+        "Embedded links"
+      ],
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting",
+        "Embedded links"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-8440882710563680495",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:34:26.538359+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "verdict": "PHISHING",
+      "risk_score": 90,
+      "reasoning": "The message contains multiple phishing cues.",
+      "indicators": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-8440882710563680495",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:34:26.589325+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "AI endpoint timed out"
+    },
+    "timestamp": "2026-08-18T13:34:26.619146+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "DNS lookup timed out"
+    },
+    "timestamp": "2026-08-18T13:34:26.646119+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "subject": "",
+    "from_address": "",
+    "analysis_error": {
+      "check": "header parsing",
+      "message": "parser timed out"
+    },
+    "timestamp": "2026-08-18T13:34:26.680760+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "securecorp.example",
+      "target_domain": "google.com",
+      "similarity": 0.286,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "verdict": "CLEAN",
+      "risk_score": 10,
+      "reasoning": "No strong phishing indicators were detected.",
+      "indicators": [],
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-7322265156873291753",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:42:07.243862+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "external-example.com",
+      "target_domain": "amazon.com",
+      "similarity": 0.4,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "verdict": "PHISHING",
+      "risk_score": 100,
+      "reasoning": "The message contains multiple phishing cues.",
+      "indicators": [
+        "Urgency",
+        "Credential Harvesting",
+        "Embedded links"
+      ],
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting",
+        "Embedded links"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-4374001177763951442",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:42:07.277125+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "external-example.com",
+      "target_domain": "amazon.com",
+      "similarity": 0.4,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "verdict": "PHISHING",
+      "risk_score": 90,
+      "reasoning": "The message contains multiple phishing cues.",
+      "indicators": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-4374001177763951442",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:42:07.307247+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "AI endpoint timed out"
+    },
+    "timestamp": "2026-08-18T13:42:07.323314+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "DNS lookup timed out"
+    },
+    "timestamp": "2026-08-18T13:42:07.352231+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "subject": "",
+    "from_address": "",
+    "analysis_error": {
+      "check": "header parsing",
+      "message": "parser timed out"
+    },
+    "timestamp": "2026-08-18T13:42:07.385734+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 80,
+    "subject": "Account notice",
+    "from_address": "Microsoft Support <notice@micros0ft.com>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; SUSPICIOUS_TYPOSQUATTING",
+    "risk_score": 80,
+    "risk_level": "high",
+    "severity": "high",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "SUSPICIOUS_TYPOSQUATTING"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "domain_typosquatting",
+        "severity": "high",
+        "detail": "Sender domain closely resembles microsoft.com (92.3% similarity)"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "micros0ft.com",
+      "target_domain": "microsoft.com",
+      "similarity": 0.923,
+      "status": "SUSPICIOUS_TYPOSQUATTING",
+      "is_suspicious": true
+    },
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "verdict": "CLEAN",
+      "risk_score": 10,
+      "reasoning": "No strong phishing indicators were detected.",
+      "indicators": [],
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-6394097766184616727",
+      "fingerprint": "Account notice|Microsoft Support <notice@micros0ft.com>|Please review your account.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 80,
+        "reason": "SPF failed; DMARC failed; SUSPICIOUS_TYPOSQUATTING"
+      }
+    },
+    "timestamp": "2026-08-18T13:42:21.939428+00:00"
+  },
+  {
+    "verdict": "SUSPICIOUS",
+    "status": "DANGER",
+    "score": 85,
+    "subject": "Notice",
+    "from_address": "security@securecorp.example",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "Potential CSS Exfiltration (Outlook Exploit)",
+    "risk_score": 85,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "Potential CSS Exfiltration (Outlook Exploit)"
+    ],
+    "policy_hits": [
+      {
+        "rule": "css_data_exfiltration",
+        "severity": "critical",
+        "detail": "Potential CSS Exfiltration (Outlook Exploit): External CSS URL call, External stylesheet import"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "securecorp.example",
+      "target_domain": "google.com",
+      "similarity": 0.286,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "css_exfiltration": {
+      "is_suspicious": true,
+      "matches": [
+        {
+          "pattern": "External CSS URL call",
+          "match": "url(https://"
+        },
+        {
+          "pattern": "External stylesheet import",
+          "match": "@import"
+        }
+      ],
+      "details": "Potential CSS Exfiltration (Outlook Exploit): External CSS URL call, External stylesheet import"
+    },
+    "ai_risk_score": 20,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "verdict": "CLEAN",
+      "risk_score": 20,
+      "reasoning": "No strong phishing indicators were detected.",
+      "indicators": [
+        "Embedded links"
+      ],
+      "is_phishing": false,
+      "detected_tactics": [
+        "Embedded links"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-7727509001489004841",
+      "fingerprint": "Notice|security@securecorp.example|@import url(https://evil.example/style.css)  Review this notice.\n@import url(https://evil.example/style.css)  Review this notice.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 85,
+        "reason": "Potential CSS Exfiltration (Outlook Exploit)"
+      }
+    },
+    "timestamp": "2026-08-18T13:45:16.780316+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 10,
+    "subject": "",
+    "from_address": "ahmed@securecorp.example",
+    "decision": "PASS",
+    "action": "PASS",
+    "reason": "No suspicious indicators detected",
+    "risk_score": 10,
+    "risk_level": "low",
+    "severity": "low",
+    "indicators": [],
+    "policy_hits": [],
+    "threat_narrative": "The message does not appear to contain enough suspicious signals to warrant quarantine.",
+    "spf_pass": true,
+    "dmarc_pass": true,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "securecorp.example",
+      "target_domain": "google.com",
+      "similarity": 0.286,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "css_exfiltration": {
+      "is_suspicious": false,
+      "matches": [],
+      "details": "No CSS data-exfiltration indicators detected"
+    },
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "verdict": "CLEAN",
+      "risk_score": 10,
+      "reasoning": "No strong phishing indicators were detected.",
+      "indicators": [],
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": true,
+      "dmarc_pass": true,
+      "is_display_name_spoofed": false,
+      "details": "Internal domain trusted"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-919209617169175067",
+      "fingerprint": "|ahmed@securecorp.example|\"\r\n            \"Subject: Team sync for today\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hi team, the meeting is at 3 PM and no action is required.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "trusted",
+      "transition_reason": null,
+      "report": {
+        "decision": "PASS",
+        "risk_score": 10,
+        "reason": "No suspicious indicators detected"
+      }
+    },
+    "timestamp": "2026-08-18T13:45:16.816213+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "external-example.com",
+      "target_domain": "amazon.com",
+      "similarity": 0.4,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "css_exfiltration": {
+      "is_suspicious": false,
+      "matches": [],
+      "details": "No CSS data-exfiltration indicators detected"
+    },
+    "ai_risk_score": 100,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "verdict": "PHISHING",
+      "risk_score": 100,
+      "reasoning": "The message contains multiple phishing cues.",
+      "indicators": [
+        "Urgency",
+        "Credential Harvesting",
+        "Embedded links"
+      ],
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting",
+        "Embedded links"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5039118844002101031",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent: Verify your password now\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Hello, verify your password immediately to avoid account s",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:45:16.845644+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 100,
+    "subject": "",
+    "from_address": "ceo@external-example.com",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70",
+    "risk_score": 100,
+    "risk_level": "critical",
+    "severity": "critical",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "AI flagged as phishing",
+      "AI risk score >= 70"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "ai_phish_signal",
+        "severity": "high",
+        "detail": "Content matches phishing heuristics"
+      },
+      {
+        "rule": "risk_threshold",
+        "severity": "medium",
+        "detail": "Risk score exceeded the high-risk threshold"
+      },
+      {
+        "rule": "credential_lure",
+        "severity": "high",
+        "detail": "Message uses credential-harvesting language"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "external-example.com",
+      "target_domain": "amazon.com",
+      "similarity": 0.4,
+      "status": "CLEAN",
+      "is_suspicious": false
+    },
+    "css_exfiltration": {
+      "is_suspicious": false,
+      "matches": [],
+      "details": "No CSS data-exfiltration indicators detected"
+    },
+    "ai_risk_score": 90,
+    "ai_is_phishing": true,
+    "ai_details": {
+      "verdict": "PHISHING",
+      "risk_score": 90,
+      "reasoning": "The message contains multiple phishing cues.",
+      "indicators": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "is_phishing": true,
+      "detected_tactics": [
+        "Urgency",
+        "Credential Harvesting"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-5039118844002101031",
+      "fingerprint": "|ceo@external-example.com|\"\r\n            \"Subject: Urgent password reset\r\n\"\r\n            \"To: employee@securecorp.example\r\n\"\r\n            \"\r\n\"\r\n            \"Verify your password immediately and click here to continue.\r\n\"",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 100,
+        "reason": "SPF failed; DMARC failed; AI flagged as phishing; AI risk score >= 70"
+      }
+    },
+    "timestamp": "2026-08-18T13:45:16.874105+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: AI endpoint timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "AI endpoint timed out"
+    },
+    "timestamp": "2026-08-18T13:45:16.907526+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: DNS or AI analysis. Error: DNS lookup timed out",
+    "subject": "test",
+    "from_address": "sender@example.com",
+    "analysis_error": {
+      "check": "DNS or AI analysis",
+      "message": "DNS lookup timed out"
+    },
+    "timestamp": "2026-08-18T13:45:16.937100+00:00"
+  },
+  {
+    "verdict": "UNVERIFIED",
+    "status": "WARNING",
+    "score": 50,
+    "decision": "WARNING",
+    "action": "MANUAL_REVIEW",
+    "risk_score": 50,
+    "risk_level": "medium",
+    "severity": "medium",
+    "reason": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "details": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "indicators": [
+      "System error during email analysis"
+    ],
+    "policy_hits": [],
+    "threat_narrative": "A required email security check failed due to a system error. Manual review is required. Failed check: header parsing. Error: parser timed out",
+    "subject": "",
+    "from_address": "",
+    "analysis_error": {
+      "check": "header parsing",
+      "message": "parser timed out"
+    },
+    "timestamp": "2026-08-18T13:45:16.973091+00:00"
+  },
+  {
+    "verdict": "VERIFIED",
+    "status": "OK",
+    "score": 80,
+    "subject": "Account notice",
+    "from_address": "Microsoft Support <notice@micros0ft.com>",
+    "decision": "BLOCK",
+    "action": "QUARANTINE",
+    "reason": "SPF failed; DMARC failed; SUSPICIOUS_TYPOSQUATTING",
+    "risk_score": 80,
+    "risk_level": "high",
+    "severity": "high",
+    "indicators": [
+      "SPF failed",
+      "DMARC failed",
+      "SUSPICIOUS_TYPOSQUATTING"
+    ],
+    "policy_hits": [
+      {
+        "rule": "sender_auth_spf",
+        "severity": "high",
+        "detail": "Sender lacks a valid SPF record"
+      },
+      {
+        "rule": "sender_auth_dmarc",
+        "severity": "medium",
+        "detail": "Sender lacks a valid DMARC record"
+      },
+      {
+        "rule": "domain_typosquatting",
+        "severity": "high",
+        "detail": "Sender domain closely resembles microsoft.com (92.3% similarity)"
+      }
+    ],
+    "threat_narrative": "This message presents a credible phishing attempt because it combines sender authentication failures with credential-harvesting language and high-risk intent.",
+    "spf_pass": false,
+    "dmarc_pass": false,
+    "spoofed": false,
+    "typosquatting": {
+      "sender_domain": "micros0ft.com",
+      "target_domain": "microsoft.com",
+      "similarity": 0.923,
+      "status": "SUSPICIOUS_TYPOSQUATTING",
+      "is_suspicious": true
+    },
+    "css_exfiltration": {
+      "is_suspicious": false,
+      "matches": [],
+      "details": "No CSS data-exfiltration indicators detected"
+    },
+    "ai_risk_score": 10,
+    "ai_is_phishing": false,
+    "ai_details": {
+      "verdict": "CLEAN",
+      "risk_score": 10,
+      "reasoning": "No strong phishing indicators were detected.",
+      "indicators": [],
+      "is_phishing": false,
+      "detected_tactics": [
+        "None detected"
+      ],
+      "source": "heuristic"
+    },
+    "dns_details": {
+      "spf_pass": false,
+      "dmarc_pass": false,
+      "is_display_name_spoofed": false,
+      "details": "SPF record not found; DMARC record not found"
+    },
+    "trust_lifecycle": {
+      "message_id": "email-424699155759505135",
+      "fingerprint": "Account notice|Microsoft Support <notice@micros0ft.com>|Please review your account.",
+      "event": "initial_scan",
+      "trust_state": "compromised",
+      "transition_reason": "content_change",
+      "report": {
+        "decision": "BLOCK",
+        "risk_score": 80,
+        "reason": "SPF failed; DMARC failed; SUSPICIOUS_TYPOSQUATTING"
+      }
+    },
+    "timestamp": "2026-08-18T13:45:17.008329+00:00"
   }
 ]
